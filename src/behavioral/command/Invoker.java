@@ -1,11 +1,9 @@
 package behavioral.command;
 
-import java.util.ArrayList;
-import java.util.List;
-import java.util.Stack;
+import java.util.*;
 
 public class Invoker {
-    List<Command> commands = new ArrayList<Command>();
+    Queue<Command> commands = new LinkedList<>();
     Stack<Command> history = new Stack<Command>();
 
     public void addCommand(Command command) {
